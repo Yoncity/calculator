@@ -1,0 +1,153 @@
+body{
+	margin: 0;
+	padding: 0;
+	animation: zoom .5s linear;
+	font-family: sans-serif;
+}
+section{
+	border: 2px solid #ddd;
+	border-radius: 70px 70px 15px 15px;
+	width: 540px;
+	height: 370px;
+	margin: 80px auto 120px auto;
+	/*animation: glow 0.5s linear infinite;*/
+}
+
+@keyframes glow{
+	0%{
+		border: 2px solid #eee;
+		box-shadow: inset 1px 1px 25px #333;
+	}
+	50%{
+		border: 2px solid #ccc;
+		box-shadow: inset 1px 1px 25px #ddd;
+	}
+	100%{
+		border: 2px solid #eee;
+		box-shadow: inset 1px 1px 25px #333;
+	}
+}
+
+section h3{
+	box-sizing: border-box;
+	padding: 10px;
+	font-variant: small-caps;
+	text-align: center;
+	width: 503px;
+	margin: 10px auto 0 auto;
+}
+section #calcBox{
+	border: 1px solid #ddd;
+	border-radius: 15px 15px 0px 15px;
+	position: relative;
+	height: 70px;
+	padding: 10px;
+	width: 480px;
+	margin:auto;
+	overflow: auto;
+	background: #ddd;
+}
+section #calcAns{
+	border: 1px solid #eee;
+	border-radius: 25px 0px 0px 0px;
+	position: relative;
+	height: 35px;
+	overflow: auto;
+	width: 190px;
+	padding: 10px;
+	top: -57px;
+	left: 309px;
+	background: #eee;
+}
+section #numbers{
+	position: relative;
+	width: 60%;
+	height: 200px;
+	top: -40px;
+	left: 10px;
+	
+}
+section #numbers button{
+	width: 90px;
+	height: 40px;
+	font-size: 20px;
+	border: 1px solid #ccc;
+	background: #ccc;
+	border-radius: 15px;
+	margin: 5px 1px 5px 10px;
+}
+section #numbers button:nth-child(11){
+	width: 190px;
+}
+section #operations{
+	position: relative;
+	width: 35%;
+	height: 200px;
+	border-left: 2px solid #ddd;
+	top: -242px;
+	left: 340px;
+}
+
+section #operations button{
+	width: 80px;
+	height: 40px;
+	font-variant: small-caps;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background: #ccc;
+	border-radius: 15px;
+	margin: 5px 1px 5px 7.5px;
+}
+
+#scientific{
+	margin: -110px auto;
+	width: 542px;
+	height: 130px;
+	padding: 11px 32px;
+	box-sizing: border-box;
+	border: 2px solid #ddd;
+	border-radius: 15px;
+	/*animation: glow 0.5s linear infinite;*/
+}
+#scientific button{
+	width: 80px;
+	height: 40px;
+	font-variant: small-caps;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: normal;
+	font-weight: normal;
+	border: 1px solid #ccc;
+	background: #ccc;
+	border-radius: 15px;
+	margin: 5px 1px 5px 7.5px;
+}
+
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+	animation: zoom .5s linear;
+}
+
+@keyframes zoom{
+	from{
+		transform: scale(0);
+	}to{
+		transform: scale(1);
+	}
+}
+
+button{
+	outline: none;
+}
+button:hover{
+	cursor: pointer;
+	box-shadow: 1px 1px 10px #777;
+}
+button:active {
+	transform: translateY(4px);
+}
+

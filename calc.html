@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+
+<section>
+	<h3 id="header">YoYo's Calcu wait for it.. lator "Calculator"</h3>
+	<div id="calcBox"></div>
+	<div id="calcAns"></div>
+	<div id="numbers">
+		<script type="text/javascript">
+			for(i = 7; i <= 9; i++)
+				document.write("<button onclick='getNumber(this)' value=" + i + ">" + i + "</button>");
+
+
+			for(i = 4; i <= 6; i++)
+				document.write("<button onclick='getNumber(this)' value=" + i + ">" + i + "</button>");
+
+			for(i = 1; i <= 3; i++)
+				document.write("<button onclick='getNumber(this)' value=" + i + ">" + i + "</button>");
+
+			document.write("<button onclick='getNumber(this)' value='0'> 0 </button>")
+
+			document.write("<button onclick='scientific()'> . . . </button>");
+
+
+
+		</script>
+		
+	</div>
+	<div id="operations">
+		<button onclick="getOperation(this)" value="+">&plus;</button>
+		<button onclick="getOperation(this)" value="-">&minus;</button>
+		<button onclick="getOperation(this)" value="*">x</button>
+		<button onclick="getOperation(this)" value="/">&divide;</button>
+		<button onclick="getOperation(this)" id="sq" value="&radic;">&radic;</button>
+		<button onclick="getOperation(this)" value="del">delete</button>
+		<button onclick="calculation()" onmousedown="sound.play()">=</button>
+		<button onclick="getOperation(this)" value="Clear">clear</button>
+	</div>
+</section>
+
+<div id="scientific" class="hide">
+	<button onclick="getNumber(this)" value="(">(</button>
+	<button onclick="getNumber(this)" value=")">)</button>
+	<button onclick='getNumber(this)' value='.'> . </button>
+	<button onclick="getOperation(this)" value=",">,</button>
+	<button onclick='getNumber(this)' value=' % '> % </button>
+	<button onclick="getOperation(this)" value="log">log</button>
+	<button onclick="getOperation(this)" value="e">e</button>
+	<button onclick="getOperation(this)" value="sin">sin</button>
+	<button onclick="getOperation(this)" value="cos">cos</button>
+	<button onclick="getOperation(this)" value="tan">tan</button>
+</div>
+
+<script src="calc.js"></script>
+</body>
+</html>
